@@ -1,0 +1,76 @@
+/*Resetar formatação*/
+*, ::before, ::after{
+    margin: none;
+    padding: none;
+}
+/*Cor das letras*/
+a, ul{
+    color: white;
+}
+
+/*Cabeçalho*/
+header, footer{
+    width: 100%;
+    background-color:  rgb(34, 1, 17);
+    border-bottom: solid rgb(34, 1, 17);
+    border-top: solid rgb(34, 1, 17);
+}
+
+/*MenuHorizontal*/
+nav, header nav ul, footer, footer ul{
+    display: flex;
+}
+
+nav, footer ul li {
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;/*Colocar o texto em letras maíusculas*/
+    letter-spacing: 4px;/*Adicionar espaço entre as letras*/
+}
+
+header nav ul, footer ul{ /*Remover bullets*/
+    list-style: none;
+}
+
+header nav ul li, footer ul li{
+    margin-right: 10px;
+    padding: 10px;
+}
+
+a{ 
+    text-decoration: none; /*Remover linha da âncora*/
+    padding: 20px;
+}
+
+header nav ul li{
+    border-radius: 10px;
+    transition: 0.9s; /*Tempo de transição*/
+}
+
+header nav ul li:hover{
+    cursor: pointer;
+    background-color: rgb(66, 14, 39);
+}
+
+/*Corpo*/
+
+main {
+    background: url(imagens/background.png) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+/*Rodapé*/
+footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li:first-child{
+    border-right: solid rgb(15, 0, 7);
+}
