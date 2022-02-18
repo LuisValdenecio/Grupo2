@@ -25,7 +25,7 @@ nav, header nav ul, footer, footer ul{
     display: flex;
 }
 
-nav, footer ul li {
+nav, footer ul li, .logo {
     justify-content: space-between;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
