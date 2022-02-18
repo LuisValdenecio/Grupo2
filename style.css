@@ -3,6 +3,10 @@
     margin: none;
     padding: none;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 /*Cor das letras*/
 a, ul{
     color: white;
@@ -54,6 +58,27 @@ header nav ul li{
 header nav ul li:hover{
     cursor: pointer;
     background-color: rgb(66, 14, 39);
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/*Menu para dispositivos móveis*/
+
+/*Responsividade*/
+@media (max-width:999px) {
+
+    header nav ul{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgb(34, 1, 17);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
 }
 
 /*Corpo*/
@@ -71,6 +96,4 @@ footer{
     align-items: center;
 }
 
-footer ul li:first-child{
-    border-right: solid rgb(15, 0, 7);
-}
+
