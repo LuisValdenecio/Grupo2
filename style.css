@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 /*Cor das letras*/
-a, ul{
+a, ul, main section:last-child p, h1, section article p{
     color: white;
 }
 
@@ -21,16 +21,16 @@ header, footer{
 }
 
 /*MenuHorizontal*/
-nav, header nav ul, footer, footer ul{
+nav, header nav ul, footer, footer ul, main section:last-child, main section:first-child, main section article h1, main section article  {
     display: flex;
 }
 
-nav, footer ul li, .logo {
+nav, footer ul li, .logo, section h1, section article h1 {
     justify-content: space-between;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
-.logo{
+.logo, section h1, section article h1{
     font-size: 24px;
     text-transform: uppercase;/*Colocar o texto em letras maíusculas*/
     letter-spacing: 4px;/*Adicionar espaço entre as letras*/
@@ -62,35 +62,77 @@ header nav ul li:hover{
     margin-left: 32px;
 }
 
-/*Menu para dispositivos móveis*/
-
 /*Responsividade*/
 @media (max-width:999px) {
 
     header nav ul{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: rgb(34, 1, 17);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+       display: none;
+    }
+
+    main section:first-child, main section:last-child{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+    
+    main section article {
+        width: 100%;
+    }
+    
+    main section article h1 {
+        text-align: center;
+    }
+
+    main section article:last-child{
+        display: none;
     }
     
 }
 
 /*Corpo*/
-
-main {
-    background: url(imagens/background.png) no-repeat center center;
-    background-size: cover;
-    height: 92vh;
+main section:first-child{
+    flex-direction: row-reverse;
+    background:rgb(66, 14, 39);
+    height: 100vh;
+    width: 100%;
+}
+main section article{
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 50%;
 }
 
-/*Rodapé*/
-footer{
+main section article p{
+    text-align: center;
+    margin: 0 5vw 2vw 5vw;
+}
+
+main section article a{
+    background-color: rgba(255, 8, 211, 0.479);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section article a:hover{
+    cursor: pointer;
+    padding: 12px;
+}
+
+main section:last-child {
+    background: url(imagens/background.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+main section:last-child article{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
