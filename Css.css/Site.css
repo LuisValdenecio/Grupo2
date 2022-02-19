@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: Helvetica;
+
+}
+
+/*Cabeçalho*/
+header{
+    {
+        width: 100%;
+        background-color:  rgb(34, 1, 17);
+        border-bottom: solid rgb(34, 1, 17);
+        border-top: solid rgb(34, 1, 17);
+    }
+}
+/*Grid de Produtos*/
+.container{
+    background-color: #eeeeee;
+    min-height: 60vh;
+    padding: 50px;
+}
+.produts-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    .card{
+        width: 31%;
+        display: inline-block;
+        margin: 1% 1%;
+        padding: 15px;
+    }
+    .product-image{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+    #img-1 {
+        background-image: url('../Imagens/pd1.jpg'); 
+
+    }
+    #img-2 {
+        background-image: url('../Imagens/pd2.jpg') ;
+    }
+    #img-3 {
+        background-image: url('../Imagens/pd3.jpg') ;
+    }
+    #img-4 {
+        background-image: url('../Imagens/pd4.jpg') ;
+    }
+    #img-5 {
+        background-image: url('../Imagens/pd5.png') ;
+    }
+    #img-6 {
+        background-image: url('../Imagens/pd6.jpg') ;   
+    }
+    h3{
+        margin-bottom: 10px;
+        color: darkgreen;
+        font-size: 24px;
+        border-left:  5px solid #0f6442;
+        padding-left: 7px;
+        font-size:24px;
+    }
+    .card p {
+        font-weight: bold;
+    }
+    .btn{
+        display: block;
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+         background-color: darkgreen;
+         color: darkgrey;
+         padding: 5px;
+         border-radius: 5px;
+
+    }
+    .btn:hover{
+        background-color:  rgb(34, 1, 17);;
+    }
+    body{
+        background: url(/imagens/Backgroundd.jpg) no-repeat center center;
+      
+    }
+    /*footer*/
+    footer {
+        background-color: darkgreen;
+        color: #ffffff;
+        border-top: 3px solid #0f6442;
+        text-align: center;
+        padding: 80pxss;
+    
+    }
+
+}
