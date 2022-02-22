@@ -124,3 +124,33 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+/*Responsividade*/
+@media (max-width:999px) {
+    
+    header nav ul{
+       display: none;
+    }  
+
+    main {
+       display: flex;
+       justify-content: center;
+      align-items:center;
+       flex-direction: column;
+       height: 100%;
+    }
+    main section section{
+        width: 50%;
+        height: 10%;
+    }
+    
+    main section article {
+        width: 100%;
+    }
+    
+    main section article h1 {
+        text-align: center;
+    }
+
+    
+}
