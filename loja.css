@@ -53,7 +53,6 @@ a{
 header nav ul li{
     border-radius: 10px;
     transition: 0.9s; /*Tempo de transição*/
-    
 }
 
 header nav ul li:hover{
@@ -104,7 +103,4 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-@main {
-    section section 
 }
