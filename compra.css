@@ -3,12 +3,12 @@
     margin: none;
     padding: none;
 }
-body, main, h1{
+body{
   margin: 0;
   padding: 0;
 }
 /*Cor das letras*/
-a, ul{
+a, ul, main h1, p{
     color: white;
 }
 
@@ -21,11 +21,11 @@ header, footer{
 }
 
 /*MenuHorizontal*/
-nav, header nav ul, footer, footer ul, main, main section{
+nav, header nav ul, footer, footer ul{
     display: flex;
 }
 
-nav, footer ul li, .logo {
+nav, footer ul li, .logo{
     justify-content: space-between;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
@@ -50,76 +50,66 @@ a{
     padding: 20px;
 }
 
-header nav ul li{
+header nav ul li, footer ul li{
     border-radius: 10px;
     transition: 0.9s; /*Tempo de transição*/
-    
 }
 
 header nav ul li:hover{
     cursor: pointer;
     background-color: rgb(66, 14, 39);
-    letter-spacing: 3px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-left: 32px;
+}
+footer ul:last-child li:hover{
+    cursor: pointer;
+    background-color: rgb(66, 14, 39);
+    border-radius: 10px;
+    letter-spacing: 1px;
     margin-left: 32px;
 }
 
 /*Corpo*/
 main{
     width: 100%;
-    height: 250vh;
-    background-size: cover;
-    background-color:#690070;
-}
-
-/*Loja de compras*/
-main section {
-    width: 90%;
+    height: 100vh;
+    background-color: rgb(105, 0, 112);
     display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-main section article article img {
-    width: 80%;
-    height: 50%;
-    margin:20px 20px 40px 30px;
-    cursor: pointer;
-    border-radius: 20px;
-}
-main section article article a {
-    display: inline;
-    font-family: sans-serif;
-    color: black;
-}
-main section section article {
-    width: 100%;
-    height: 20rem;
-    background-color: #f7f7f7d5;
-    border-block-start-color: black;
-    border-radius: 20px;
-}
-/*catalogo*/
-.btn{
     align-items: center;
-    display: block;
-    width: 90%;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgb(26, 1, 49);
-    color: #fff;
-    padding: 10px;
-    border-radius: 2,5px;
-    transition: .5s;
-    
-
 }
-.btn:hover{
-    background-color: rgb(17, 14, 66);
 
+main section{
+    width: 30%;
+    height: 50%;
+    margin: 5px;
+}
+
+main section, main section {
+    display: flex;
+    justify-content: center;
+}
+main section {
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-size: medium;
+}
+
+main section a{
+    background-color: rgb(34, 1, 17);
+    border-radius:30px;
+}
+
+main section a:hover{
+    background-color: rgb(66, 14, 39);
+    letter-spacing: 4px;
 }
 
 /*Rodapé*/
-footer{
+footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -134,12 +124,14 @@ footer{
 
     main {
        display: flex;
+       justify-content: center;
+      align-items:center;
        flex-direction: column;
        height: 100%;
     }
     main section section{
-        width: 50%;
-        height: 10%;
+        width: 80%;
+        height: 20%;
     }
     
     main section article {
@@ -152,3 +144,4 @@ footer{
 
     
 }
+
