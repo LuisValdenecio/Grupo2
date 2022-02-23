@@ -68,7 +68,7 @@ main{
     width: 100%;
     height: 250vh;
     background-size: cover;
-    background-color: rgb(94, 9, 50);
+    background-color:#690070;
 }
 
 /*Loja de compras*/
@@ -118,13 +118,37 @@ main section section article {
 
 }
 
-
 /*Rodapé*/
 footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-@main {
-    section section 
+
+/*Responsividade*/
+@media (max-width:999px) {
+    
+    header nav ul{
+       display: none;
+    }  
+
+    main {
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+    }
+    main section section{
+        width: 50%;
+        height: 10%;
+    }
+    
+    main section article {
+        width: 100%;
+    }
+    
+    main section article h1 {
+        text-align: center;
+    }
+
+    
 }
